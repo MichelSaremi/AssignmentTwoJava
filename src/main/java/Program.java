@@ -5,7 +5,8 @@ public class Program {
     public static void main(String[] args) {
         SqliteHelper sqliteHelper = new SqliteHelper();
         //ArrayList<Customer> customers = sqliteHelper.selectAllCustomers();
-        ArrayList<Customer> customers = sqliteHelper.selectSpecificCustomersName("Mark");
+        //ArrayList<Customer> customers = sqliteHelper.selectSpecificCustomersName("Mark");
+        ArrayList<Customer> customers = sqliteHelper.selectSubsetOfCustomers(12,4);
         //Customer customer = sqliteHelper.selectSpecificCustomerID("55");
         printCustomers(customers);
         //printCustomer(customer);
